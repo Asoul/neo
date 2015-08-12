@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="007-Neo" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://asoul.github.io/neo/image/run_neo_og.png" />
+	<meta property="og:description" content="I'm 007."/>
+	<title>007-Neo</title>
+	<link rel="stylesheet" href="./css/run_neo.css" />
+</head>
+<body charset=utf-8 onSelectStart="event.returnValue=false" onkeydown="downKey(event)" onkeyup="upKey(event)">
+	<div id="pop_out_div">
+		<h1 id="pop_out_h1">007-Neo</h1>
+		<h2 id="pop_out_h2"></h2>
+		<button onclick="gameStart()" id="start_button" class="button">Start</button>
+		<a href="./run_neo.html" id="pop_out_a">Try again?</a>
+	</div>
+	<div id="playground">
+		<div id="my_div">
+			<div id="neo_container">
+				<div id="neo">
+					<div id="face">
+						<div id="eye_container">
+							<div id="eye_left" class="eye"></div>
+							<div id="eye_right" class="eye"></div>
+						</div>
+						<div id="nose"></div>
+						<div id="mouth_container">
+							<div id="mouth_left" class="mouth_left_smile"></div>
+							<div id="mouth_right" class="mouth_right_smile"></div>
+							<div id="mouth_down" class="mouth"></div>
+						</div>
+					</div>
+					<div id="body_container">
+						<div id="ear_left_container" class="body">
+							<div id="ear_left_back" class="ear_left"></div>
+							<div id="ear_left_front" class="ear_left"></div>
+						</div>
+						<div id="ear_right_container" class="body">
+							<div id="ear_right_back" class="ear_right"></div>
+							<div id="ear_right_front" class="ear_right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="missles">
+			<div id="missle_0" class="missle"></div>
+			<div id="missle_1" class="missle"></div>
+			<div id="missle_2" class="missle"></div>
+			<div id="missle_3" class="missle"></div>
+			<div id="missle_4" class="missle"></div>
+			<div id="missle_5" class="missle"></div>
+			<div id="missle_6" class="missle"></div>
+			<div id="missle_7" class="missle"></div>
+			<div id="missle_8" class="missle"></div>
+			<div id="missle_9" class="missle"></div>
+			<div id="missle_10" class="missle"></div>
+			<div id="missle_11" class="missle"></div>
+			<div id="missle_12" class="missle"></div>
+			<div id="missle_13" class="missle"></div>
+			<div id="missle_14" class="missle"></div>
+			<div id="missle_15" class="missle"></div>
+			<div id="missle_16" class="missle"></div>
+			<div id="missle_17" class="missle"></div>
+			<div id="missle_18" class="missle"></div>
+			<div id="missle_19" class="missle"></div>
+		</div>
+		<div id="heart"></div>	
+	</div>
+	<div id="score_div">Score : 0</div>
+	<div id="hp_div">HP : 100</div>
+	<div id="text1"></div>
+	<div id="text2"></div>
+	<div id="text3"></div>
+	<div id="text4"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="./js/run_neo.js" async></script>
+</body>
+</html>
